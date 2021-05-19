@@ -11,23 +11,23 @@ const config = {
     measurementId: "G-G2T0DB4YZV"
   };
 
-class Firebase {
+  class Firebase {
     constructor() {
         app.initializeApp(config);
         this.auth = app.auth();
     }
 
-    //inscription
-    signUpUser = (email,password) => 
-    this.auth.createUserWithEmailAndPassword(email,password);
+    // inscription
+    signupUser = (email, password) => 
+    this.auth.createUserWithEmailAndPassword(email, password);
 
-    //connexion
-    loginUser = (email,password) =>
-    this.auth.signInWithEmailAndPassword(email,password);
+    // Connexion
+    loginUser = (email, password) => 
+    this.auth.signInWithEmailAndPassword(email, password);
 
-    //deconnexion
-    signOutUser = () =>
-    this.auth.signOut();
+    // Déconnexion
+    signoutUser = () => this.auth.signOut();
+
 }
 
 export default Firebase;
