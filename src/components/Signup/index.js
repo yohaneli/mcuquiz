@@ -7,7 +7,7 @@ const Signup = (props) => {
 
     const firebase = useContext(FirebaseContext);
 
-    console.log(firebase);
+    //console.log(firebase);
 
     const data = {
         pseudo:'',

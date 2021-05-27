@@ -12,7 +12,7 @@ const Landing = () => {
     //console.log(refWolverine);
 
     useEffect(() => {
-        console.log("je suis dans le useEffect ---");
+        //console.log("je suis dans le useEffect ---");
         refWolverine.current.classList.add("startingImg");
         setTimeout(() => {
             refWolverine.current.classList.remove("startingImg");

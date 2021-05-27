@@ -23,9 +23,9 @@ const Login = (props) => {
     },[password,email,btn])
 
     const handleSubmit = e => {
-        console.log("je suis dans le handle submit");
+        //console.log("je suis dans le handle submit");
         e.preventDefault();
-        console.log(email,password);
+        //console.log(email,password);
         firebase.loginUser(email,password)
         .then(user => {
             setEmail('');
